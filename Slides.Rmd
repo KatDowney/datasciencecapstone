@@ -1,0 +1,49 @@
+---
+title: "Data Science Capstone - Final Project"
+author: "Kat Downey"
+date: "23/08/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+Final project in the Data Scicne Capstone course
+Author: Kat Downey
+Shiny App :https://katjd197.shinyapps.io/Data_Science_Final_Project/
+Git Hub Repo: https://github.com/KatDowney/datasciencecapstone
+
+
+## Project
+The final project in the 10 module data science specialisation was the Data Science Capstone project where I had to build and provide an interface that can use used by others.
+
+## Submitted Project
+
+I had to submit:
+- A Shiny app that takes an word or multiple words and outputs a prediction of the next word.
+- A slide deck consisting of no more than 5 slides detailing what has been done.
+
+
+## Data
+-Data was downloaded from Coursera-SwiftKey.zip. 
+
+-Read in the the blog, news and twitter dataset from the English language files 
+-Built a corpus - a collection of written texts - used the function VCorpus.
+-The corpus is processed using tm_map to remove punctuation, numbers, whitespaces, stopwords and convert text to lower case.
+
+## Data Part 2
+-Next with the Shiny App I used the back off model that estimates the conditional probability of a word given its history with the n-gram. -https://en.wikipedia.org/wiki/Katz%27s_back-off_model 
+
+-Next we apply tokenization - which is the splitting of a phrase - into words
+
+-The processed corpus was then tokenized in n-grams frequency database, namely 2-gram (bigram), 3-grams (trigram) and 4-grams (quadgram) with frequency of occurrence n.
+
+## Shiny Application
+-A shiny app that predicts the next word after  text is inputted by a user.
+
+https://katjd197.shinyapps.io/Data_Science_Final_Project/
+
+
